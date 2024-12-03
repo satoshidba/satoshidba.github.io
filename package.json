@@ -1,13 +1,14 @@
 {
-	"name": "blog-template",
+	"name": "satoshidba.github.io",
 	"type": "module",
 	"version": "1.1.0",
-	"description": "A template for creating a blog with Astro",
-	"author": "danielcgilibert",
+	"packageManager": "pnpm@9",
+	"description": "Website built with Astro",
+	"author": "satoshidba",
 	"license": "GPL-3.0-only",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/danielcgilibert/blog-template"
+		"url": "https://github.com/satoshidba/satoshidba.github.io"
 	},
 	"keywords": [
 		"astro",
