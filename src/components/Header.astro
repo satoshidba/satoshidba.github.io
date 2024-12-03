@@ -1,30 +1,31 @@
 ---
 import HeaderLink from '@/components/HeaderLink'
-import TwitterIcon from '@/components/icons/TwitterIcon'
+import BlueSkyIcon from '@/components/icons/BlueSkyIcon'
 import GithubIcon from '@/components/icons/GithubIcon'
 import MenuIcon from './icons/MenuIcon.astro'
 import Search from '@/components/Search'
 import TagIcon from './icons/TagIcon.astro'
 import ToggleTheme from './ToggleTheme.astro'
+import Shape from './icons/Shape.astro'
 
 // ADD YOUR SOCIAL NETWORKS HERE
 const SOCIALNETWORKS = [
 	{
 		name: 'Github',
-		url: 'https://github.com/danielcgilibert/blog-template',
+		url: 'https://github.com/satoshidba',
 		icon: GithubIcon
 	},
 
 	{
-		name: 'Twitter',
-		url: 'https://github.com/danielcgilibert/blog-template',
-		icon: TwitterIcon
+		name: 'BlueSky',
+		url: 'https://bsky.app/profile/satoshidba.com',
+		icon: BlueSkyIcon
 	}
 ]
 ---
 
 <header class='relative flex items-center h-12 font-semibold'>
-	<a class='text-lg mr-auto' href='/'>Home</a>
+	<a class='text-lg mr-auto' href='/'><Shape /></a>
 
 	<div
 		id='astro-header-drawer'

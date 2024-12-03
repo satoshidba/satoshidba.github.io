@@ -3,7 +3,9 @@ import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import tailwind from '@astrojs/tailwind'
 import { remarkReadingTime } from './src/utils/readTime.ts'
-import { siteConfig } from './src/data/site.config'
+import { siteConfig } from './src/data/site.config.ts'
+
+import { defineConfig, passthroughImageService } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
@@ -30,5 +32,8 @@ export default defineConfig({
 		}),
 		sitemap(),
 		tailwind()
-	]
+	],
+	image: {
+		service: passthroughImageService()
+	  }
 })
